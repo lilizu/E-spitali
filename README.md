@@ -1,2 +1,2 @@
 # E-spitali
-Digital Solution
+Digital Solution in Kosovo.

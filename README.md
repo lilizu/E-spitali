@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Startmin
 
 **Startmin** is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) originally created by [Start Bootstrap](http://startbootstrap.com/).
@@ -56,3 +57,7 @@ Many thanks to the creator of and the snippet contributors at [Bootsnipp](http:/
 Copyright 2013-2016 Christian Neff / Iron Summit Media Strategies, LLC.
 
 Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/blob/gh-pages/LICENSE) license.
+=======
+# E-spitali
+Digital Solution in Kosovo.
+>>>>>>> 2bc4f0066f3914658818554e4bcdf11234f28e3f

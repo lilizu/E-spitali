@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Startmin - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/startmin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Doctor/Admin</a>
+        </div>
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <!-- Top Navigation: Left Menu -->
+        <ul class="nav navbar-nav navbar-left navbar-top-links">
+            <li><a href="#"><i class="fa fa-home fa-fw"></i> Website</a></li>
+        </ul>
+
+        <!-- Top Navigation: Right Menu -->
+        <ul class="nav navbar-right navbar-top-links">
+            <li class="dropdown navbar-inverse">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell fa-fw"></i> <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="text-center" href="#">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> Doctor <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Sidebar -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#section1" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#section2"><i class="fa fa-sitemap fa-fw"></i> Terminet<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">Lista e Ternimeve</a>
+                            </li>
+                            <li>
+                                <a href="#">Terminet e kerkuara <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                  
+                                </ul>
+                            </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#section3"><span class="glyphicon glyphicon-user"></span> Pacientat</a>
+                     </li>
+                     <li>
+                        <a href="#section4"><i class="fa fa-stethoscope" aria-hidden="true"></i> Receta per pacient</a>
+                     </li>
+                     <li>
+                        <a href="#section5"><i class="fa fa-tint" aria-hidden="true"></i> Grupi i gjakut</a>
+                     </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Page Title</h1>
+                </div>
+            </div>
+
+            <!-- ... Your content goes here ... -->
+
+            <div id="section3">
+
+                           <div class="table-responsive tab1">
+                <h2>Historiku i pacientit</h2>
+
+                  <!-- adding search button and new audit list-->
+
+               <div class="row" style="margin-bottom:  10px">
+                <div class="col-md-6">
+                  <form  role="search">
+                        <div class="input-group">
+                        <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                        <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+
+                    <div class="col-md-6">
+
+                        <a href="#" target="_blank" class="btn btn-danger pull-right"><span class="glyphicon glyphicon-plus"></span> Shtoje nje pacient te ri</a>
+
+                    </div>
+
+                </div>
+
+                  <!-- table for audit history-->
+              <table id="mytable" class="table table-bordred table-striped">
+                   
+
+                   <thead>
+                
+                   <th><input type="checkbox" id="checkall" /></th>
+                   <th>Emri</th>
+                    <th>Email</th>
+                     <th>Adresa</th>
+                     <th>Nr.Tel</th>
+                     <th>Gjinia</th>
+                     <th>Data e Lindjes</th>
+                     <th>Mosha</th>
+                     <th>Grupi i Gjakut</th>
+                     <th>Edit</th>
+                      
+                       <th>Delete</th>
+                   </thead>
+    <tbody>
+    
+    <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td>Mohsin</td>
+    <td>Irshad</td>
+    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+    <td>13.12.2013</td>
+    <td>mashkull</td>
+    <td>13.12.2013</td>
+    <td>45</td>
+    <td>AB</td>
+    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href="audit_view_edit.html" target="_blank"  class="btn btn-primary btn-xs" data-title="Edit"  data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></a></p></td>
+    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    </tr>
+    
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td>Mohsin</td>
+    <td>Irshad</td>
+    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+    <td>13.12.2013</td>
+    <td>mashkull</td>
+    <td>13.12.2013</td>
+    <td>45</td>
+    <td>AB</td>
+    
+    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href="audit_view_edit.html" target="_blank"  class="btn btn-primary btn-xs" data-title="Edit" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></a></p></td>
+    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    </tr>
+    
+    
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td>Mohsin</td>
+    <td>Irshad</td>
+    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+    <td>13.12.2013</td>
+    <td>mashkull</td>
+    <td>13.12.2013</td>
+    <td>45</td>
+    <td>AB</td>
+    
+    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href="audit_view_edit.html" target="_blank"  class="btn btn-primary btn-xs" data-title="Edit" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></a></p></td>
+    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    </tr>
+    
+    
+
+    
+   
+    
+   
+    
+    </tbody>
+        
+</table>
+
+<div class="clearfix"></div>
+<ul class="pagination pull-right">
+  <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+</ul>
+                
+            </div>
+            
+      </div>
+  </div>
+</div>
+
+
+
+
+          
+     
+      
+        
+      
+      
+         
+
+
+
+
+        
+  
+    
+    
+    
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+      </div>
+          <div class="modal-body">
+       
+       <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
+       
+      </div>
+        <div class="modal-footer ">
+        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
+      </div>
+        </div>
+    <!-- /.modal-content --> 
+  </div>
+      <!-- /.modal-dialog --> 
+    </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/startmin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Administrata </title>
+          <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Startmin - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/startmin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+   <body>
+
+
+
+<div id="part3">
+    <div class="container">
+        <div class="row">
+            
+<div id="form">
+     <div class="inner-1">
+ 
+    
+    <form method="POST" class="form-horizontal well" action="administrata.php" name="form1" >
+            <h2 class="text-primary">1. Forma e Administrates</h2>
+             <hr />
+
+
+
+
+             <div class="form-group">
+                <label for="ref-num" class="control-label col-xs-2 "> Numri ID: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control"  name="id_pacienti" id="id_pacienti" placeholder="ID e pacientit*" required/>
+                    </div>
+            </div>
+       
+
+
+             <div class="form-group">
+                <label for="shendetesor" class="control-label col-xs-2 ">Institucioni Shendetesor: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="shendetesor" name="instutucion" placeholder="Instutucioni shendetsor*" required/>
+                    </div>
+            </div>
+
+         
+            
+            <div class="form-group">
+                <label for="nr_regjistrimit" class="control-label col-xs-2 ">Numri i regjistrimit: </label>
+                    <div class="col-xs-6">
+                        <input type="text" name="nr_regjistrimit"  id="nr_regjistrimit" class="form-control" placeholder="Numri i regjistrimit*" required/>
+                    </div>
+            </div>
+
+
+            
+            <div class="form-group">
+                <label for="nr_personal" class="control-label col-xs-2"> Number: </label>
+                    <div class="col-xs-6">
+                        <input type="number" class="form-control" id="nr_personal" name="nr_personal" placeholder="Numri personal*" required/>
+                    </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="emri_pacientit" class="control-label col-xs-2 ">Emri Pacientit: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" name="emri_pacientit" id="emri_pacientit" placeholder="Emri*" required/>
+                    </div>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="emri_prindit" class="control-label col-xs-2 ">Emri Prindit: </label>
+                    <div class="col-xs-6">
+                         <input type="text" class="form-control" name="emri_prindit" placeholder="Emri i prindit*" id="emri_prindit" required/>
+                    </div>
+            </div>
+            
+
+              <div class="form-group">
+                <label for="mbiemri_pacientit" class="control-label col-xs-2 "> Mbiemri: </label>
+                    <div class="col-xs-6">
+                         <input type="text" class="form-control" id="mbiemri_pacientit" name="mbiemri" placeholder="Mbiemri*" required/>
+                    </div>
+            </div>
+            
+            
+
+            
+            
+                <div class="form-group">
+                    <label class="control-label  col-xs-2 " for="viti_lindjes" >Viti i Lindjes: </label>
+                        <div class="col-xs-6">
+                        <input type="date" class="form-control" id="viti_lindjes" placeholder="Viti i Lindjes *">
+                    </div>
+                 </div>
+        
+
+           
+             <div class="form-group">
+                <label for="adresa_pacientit" class="control-label col-xs-2 ">Adresa Pacientit: </label>
+                    <div class="col-xs-6">
+                         <input type="text" class="form-control" id="adresa_pacientit" name="adresa_pacientit" placeholder="Adresa Pacientit*" required/>
+                    </div>
+            </div>
+    
+             <div class="form-group">
+                <label for="email_pacientit" class="control-label col-xs-2 ">E-mail i pacientit: </label>
+                    <div class="col-xs-6">
+                         <input type="email" class="form-control" id="email_pacientit" name="mbiemri" placeholder="E-mail i pacientit *" required/>
+                    </div>
+            </div>
+
+             <div class="form-group">
+                <label for="profesioni_pacientit" class="control-label col-xs-2 ">Profesioni i pacientit: </label>
+                    <div class="col-xs-6">
+                         <input type="text" class="form-control" id="profesioni_pacientit" name="profesioni_pacientit" placeholder="Profesioni i Pacientit *" required/>
+                    </div>
+            </div>
+
+           
+
+                                        <div class="form-group">
+                                                <label for="selectform" class="control-label col-xs-2"> Statusi i pacientit: </label>
+                                        <div class="col-xs-4 ">
+                
+
+                                            <select id="selectform" name="statusi_pacientit" class="btn btn-default" form="statusi_pacientit" autofocus>
+
+                                                    <option value="martuar"> I/e martuar</option>
+                                                    <option value="pamartuar">I/e pamartuar</option>
+                                                    <option value="shkururzuar">I/e shkururzuar</option>
+                                                    <option value="ve">I/e ve</option>
+                                                   
+                                            </select>
+                                        </div>
+                                        </div>
+
+              <div class="form-group">
+                <label for="alergjit_pacientit" class="control-label col-xs-2 ">Alergjite: </label>
+                    <div class="col-xs-6">
+                         <input type="text" class="form-control" id="profesioni_pacientit" name="alergjit_pacientit" placeholder="Alergjite e Pacientit *" required/>
+                    </div>
+            </div>
+           
+
+
+            <div class="form-group">
+                <label for="gjaku_pacientit" class="control-label col-xs-2 ">Grupi i gjakut: </label>
+                    <div class="col-xs-6">
+                         <input type="text" class="form-control" id="gjaku_pacientit" name="gjaku_pacientit" placeholder="Grupi i gjakut *" required/>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="pershkrimi_p" class="control-label col-xs-2 ">Pershkrimi: </label>
+                    <div class="col-xs-6">
+                         <textarea type="text" class="form-control" id="pershkrimi_p" name="pershkrimi_p" placeholder="Dicka shtese *" required></textarea>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="gjaku_pacientit" class="control-label col-xs-2 ">Grupi i gjakut: </label>
+                    <div class="col-xs-6">
+                         <input type="text" class="form-control" id="gjaku_pacientit" name="gjaku_pacientit" placeholder="Grupi i gjakut *" required/>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="sigurim_shendetsor" class="control-label col-xs-2 ">Sigurimi shendetsor: </label>
+                    <div class="col-xs-4">
+                         <input type="text" class="form-control" id="sigurimi_shendetsor" name="sigurimi_shendetsor" placeholder="Sigurimi shendetsor*" required/>
+                     </div>
+                     <div class="col-xs-2">
+                         <input type="text" class="form-control" id="kodi_shendetsor" name="kodi_shendetsor" placeholder="Kodi Shendetsor*" required/>
+                     </div>
+             </div>
+             <div class="form-group">
+                <label for="gjaku_pacientit" class="control-label col-xs-2 ">Kategoria e sigurimit*: </label>
+                    <div class="col-xs-6">
+                    <label><input type="checkbox" name="sigurimi" value="Pensionist"  />Pensionist</label>
+                    <label><input type="checkbox" name="sigurimi" value="Sigurimi aktiv"  />Aktiv</label>
+                    <label><input type="checkbox" name="sigurimi" value="Mbrojtja sociale"  />Mbrojtja sociale</label>
+                    <label><input type="checkbox" name="sigurimi" value="Sigurmi i jashtem"  />I jashtem</label>
+                    </div>
+            </div>
+
+               
+
+
+                <div class="row" style="margin:40px">       
+    
+     <div class="col-xs-6 pull-right ">
+           <a href="new_nc.html" target="_blank" class="btn btn-primary btn-lg" style="padding: 20px" >Regjistro!</a>
+
+     </div>
+
+    </div>
+    
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/startmin.js"></script>
+
+
+    
+
+<body>
+    </html>

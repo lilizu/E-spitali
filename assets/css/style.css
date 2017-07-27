@@ -97,6 +97,9 @@ img { max-width: 100%; }
 
 .top-content .description p { opacity: 0.8; }
 
+
+
+
 .top-content .description a {
 	color: #fff;
 }
@@ -213,4 +216,5 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 	h1, h2 { font-size: 32px; }
 
 }
+
 

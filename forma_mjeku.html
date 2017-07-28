@@ -329,8 +329,435 @@
                 <label for="gjaku_pacientit" class="control-label col-xs-2 ">Grupi i gjakut: </label>
                     <p for="ref-num" class="control-label col-xs-2 "> A- </p>
             </div>
+            <!--Shtrimi i historikut-->
+
+        <div class="container">
+    <div class="row">
+        
+                  <div class="main-content">
+
+                <div class="row">
+    <div class="col-md-12 col-sm-12 clearfix" style="text-align:center;">
+        <h2 style="font-weight:200; margin:0px;">Historiku i Pacientit</h2>
+    </div>
+
+    <!-- Raw Links -->
+    <div class="col-md-12 col-sm-12 clearfix ">
+
+        <ul class="list-inline links-list pull-left">
+            <!-- Language Selector -->      
+           
+            
+            <!-- Message Notifications -->
+                     
+                
+                  
+
+                    
+                    </ul>
+    </div>
+
+</div>
+
+<hr style="margin-top:0px;" />
+<br>
 
 
+        <div class="table-responsive">
+
+                
+              <table id="box" class="table table-bordered table-striped datatable" >
+                   
+                   <thead>
+                   
+                   
+                   <th>Data</th>
+                    <th>Pacienti</th>
+                     <th>Doktorri</th>
+                    
+                     <th>Shiko te dhenat</th>
+                      
+                   </thead>
+    <tbody>
+    
+    <tr>
+    
+     <td>25 Shkurt, 2017 - 09:05</td>
+    <td>Serafina Rama</td>
+    <td>Latif Gjoka</td>
+    
+    <td>
+      <a  href="#edit" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-pencil"></i> Ndrysho</a>
+
+      <a href="#recepti" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Shiko receptin</a>
+      <a href="#diagnoza" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Diagnoza e pacientit</a>
+
+      <a href="#modal_delete" data-toggle="modal" data-title="Delete" class="btn btn-danger btn-sm btn-icon icon-left" onclick="return checkDelete();"><i class="fa fa-trash"></i> Fshije</a>
+      <!--
+      <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-default btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil"></i> Edit</button> -->
+    
+    </td>
+    </tr>
+    <!-- data tjeter-->
+    <tr>
+    
+     <td>03 Prill, 2017 - 14:20</td>
+    <td>Serafina Rama</td>
+    <td>Afrim Zejnullahu</td>
+    
+    <td>
+      <a  href="#edit" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-pencil"></i> Ndrysho</a>
+
+      <a href="#recepti" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Shiko receptin</a>
+      <a href="#diagnoza" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Diagnoza e pacientit</a>
+
+      <a href="#modal_delete" data-toggle="modal" data-title="Delete" class="btn btn-danger btn-sm btn-icon icon-left" onclick="return checkDelete();"><i class="fa fa-trash"></i> Fshije</a>
+      <!--
+      <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-default btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil"></i> Edit</button> -->
+    
+    </td>
+    </tr>
+    <!-- data tjeter-->
+    <tr>
+    
+     <td>17 Korrik, 2017 - 00:20</td>
+    <td>Serafina Rama</td>
+    <td>Fatos Osmani</td>
+    
+    <td>
+      <a  href="#edit" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-pencil"></i> Ndrysho</a>
+
+      <a href="#recepti" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Shiko receptin</a>
+      <a href="#diagnoza" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Diagnoza e pacientit</a>
+
+      <a href="#modal_delete" data-toggle="modal" data-title="Delete" class="btn btn-danger btn-sm btn-icon icon-left" onclick="return checkDelete();"><i class="fa fa-trash"></i> Fshije</a>
+
+      <!--
+      <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-default btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil"></i> Edit</button> -->
+    
+    </td>
+    </tr>
+    </tbody>     
+</table>
+
+
+<div class="clearfix"></div>
+<ul class="pagination pull-right">
+  <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+
+  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+</ul>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+ <!-- (Normal Modal) for add a prescription-->
+    <div class="modal fade" id="addpre">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin-top:100px;">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" style="text-align:left;">Forma e Mjekut</h3>
+                </div>
+                
+                
+                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+                  <span id="preloader-delete"></span>
+                    </br>
+                    <form method="POST" class="form-horizontal well" action="administrata.php" name="form1" >
+         
+        
+
+            <div class="form-group">
+                <label for="shendetesor_mjeku" class="control-label col-xs-2 ">Institucioni Shendetesor: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="shendetesor_mjeku" name="instutucion" placeholder="Instutucioni shendetsor*" required/>
+                    </div>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="konsulenti" class="control-label col-xs-2 ">Konsulenti: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="konsulenti" name="instutucion" placeholder="Konsulenti*" required/>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reparti" class="control-label col-xs-2 ">Reparti: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="reparti" name="instutucion" placeholder="Reparti*" required/>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <label for="udhezim_shendetesor" class="control-label col-xs-2 ">Udhezimi shendetsor: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="udhezim_shendetesor" name="udhezim_shendetsor" placeholder="Udhezimi shendetsor*" required/>
+                    </div>
+            </div>
+
+           
+           <div class="form-group">
+                <label for="anemeza" class="control-label col-xs-2 ">Anemeza: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="anemeza" name="anemeza" placeholder="anemeza *" required/>
+                    </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="ekzaminimet" class="control-label col-xs-2 ">Ekzaminimet: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="ekzaminimet" name="ekzaminimet" placeholder="Ekzaminimet*" required/>
+                    </div>
+            
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_ekzaminimet" name="kodi_ekzaminimet" placeholder="kodi i Ekzaminimeve*" required/>
+                    </div>
+            
+            </div>
+            <div class="form-group">
+                <label for="trajtimi" class="control-label col-xs-2 ">Trajtimi i tanishem: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="trajtimi" name="trajtimi" placeholder="Trajtimi i tanishem*" required/>
+                    </div>
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_barnava" name="kodi_barnave" placeholder="kodi i barnave *" required/>
+                    </div>
+            </div>
+             <div class="form-group">
+                <label for="trajtimi" class="control-label col-xs-2 ">Diagnoza e punes: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="trajtimi" name="trajtimi" placeholder="Trajtimi i tanishem*" required/>
+                    </div>
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_semundjes" name="kodi_semundjes" placeholder="kodi i semundjes *" required/>
+                    </div>
+            </div>
+            <div class="form-group">
+                    <label class="control-label  col-xs-2 " for="datam" >Data: </label>
+                        <div class="col-xs-8">
+                        <input type="date" class="form-control" id="datam" placeholder="Data *">
+                    </div>
+                 </div>         
+                <div class="row" style="margin:40px">       
+                    <div class="col-xs-4 col-sm-4 pull-right ">
+                        <a href="new_nc.html" target="_blank" class="btn btn-primary" style="padding: 5px" >Regjistro!</a>
+                    </div>
+                </div>
+            
+    
+
+</div>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- (Normal Modal) for Edit-->
+    <div class="modal fade" id="edit">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin-top:100px;">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" style="text-align:center;">Are you sure to delete this information ?</h4>
+                </div>
+                
+                
+                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+                  <span id="preloader-delete"></span>
+                    </br>
+                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Delete</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Cancel</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- (Normal Modal) for shiko receptin-->
+    <div class="modal fade" id="recepti">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+               
+                    
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" style="text-align:center;">Recepti per pacientin- Pershkrimi</h3>
+                </div>
+                
+                
+                
+                  
+                    </br>
+                    <div class="modal-body">
+                    <!-- qetu vin te dhenat e pacientit dhe te doktorrit, emri i pacientit, mosha, gjinia, kurse te dhenat e doktorit, emri dhe data e leshimit te receptit -->
+                    <div class="row ">
+                        <div class=" col-xs-4 pull-left">
+                            <p> Serafina Rama</p>
+                            <p>Ditëlindja: 01/11/1993</p>
+                            <p>Vendbanimi: Gjakovë</p>
+                            <p>Alergjitë: Penicilin</p>
+                        </div>
+                        <div class=" col-xs-4 pull-right">
+                            <p>Dr. Latif Gjoka</p>
+                            <p>Specialist i Stamotologjisë</p>
+                        </div>
+
+                    </div>
+                    <hr />
+                    <div style="border: 0.5px solid #DDDDDD; border-radius:5px padding-bottom: 200px ">
+
+                      <strong class="pull-left col-xs-2">Diagnoza: </strong>
+                      
+                      <input type="text" class="historiku" value="Grip"/>
+
+                      <br />
+                      
+                      
+                      <strong class="pull-left  col-xs-2" >Medikamentet: </strong>
+                    
+
+                      <input type="text" class="historiku" value="alatrol 100 mg, dy her në ditë pas buke"/>
+
+                      <br />
+                      
+
+                    
+                      <strong class="pull-left col-xs-2">Sugjerime: </strong>
+                       
+
+                      <input type="text" class="historiku1" value="Të konsumohen sa më shumë lëngje"/>
+
+                       <br />
+                      
+                    </div>
+                  
+
+                <button  style="margin-top: 25px" class="btn btn-info col-xs-2 hidden-print" onclick="myFunction1()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printo</button>
+
+                <p class="signature pull-right" style="margin-top: 100px" ><strong >Nënshkrimi: </strong></p>
+
+                      </div>
+                     <div class="modal-footer" style="margin-top: 150px">
+                     <ul><p>Spitali Regjional "Isa Grezda"</p>
+                     <p>  Rruga: Deshmoret e Lirise-Gjakove  </p>
+                     <p>  Tel: 039 256 256</p></ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- (Normal Modal) for shiko diagnozen-->
+    <div class="modal fade" id="diagnoza">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin-top:100px;">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" style="text-align:center;">A jeni e sigurt që dëshironi të fshini informacionin?</h4>
+                </div>
+                
+                
+                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+                  <span id="preloader-delete"></span>
+                    </br>
+                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Fshij</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Anulo</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+  
+
+
+
+     <script type="text/javascript">
+  function confirm_modal(delete_url , post_refresh_url)
+  {
+    $('#preloader-delete').html('');
+    jQuery('#modal_delete').modal('show', {backdrop: 'static'});
+    document.getElementById('delete_link').setAttribute("onClick" , "delete_data('" + delete_url + "' , '" + post_refresh_url + "')" );
+    document.getElementById('delete_link').focus();
+  }
+  </script>
+    
+    <!-- (Normal Modal)-->
+    <div class="modal fade" id="modal_delete">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin-top:100px;">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" style="text-align:center;">A jeni e sigurt që dëshironi të fshini të dhënat?</h4>
+                </div>
+                
+                
+                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+                  <span id="preloader-delete"></span>
+                    </br>
+                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Fshij</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Anulo</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    function myFunction() {
+    window.print();
+}
+</script>
+<script type="text/javascript">
+    function myFunction1() {
+    window.print();
+}
+</script>
+
+
+    <!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/startmin.js"></script>
+
+<link rel="stylesheet" href="assets/js/daterangepicker/daterangepicker-bs3.css">
+
+<link rel="stylesheet" href="assets/js/selectboxit/jquery.selectBoxIt.css">
+
+            <!-- eNDED SHTIMI I HISTORIKUT-->
 </form>
 </div>
 </div>
@@ -339,6 +766,7 @@
 </div>
              </div>
                  </div>
+
 
 <div id="part3">
     <div class="container">

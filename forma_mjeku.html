@@ -270,7 +270,7 @@
                          <div class="col-lg-12">
                             <h1 class="page-header">Informatat e pacientit</h1>
                             <div id="part3">
-    <div class="container" style="width: 1000px;">
+    <div  style="width: 70%;">
         <div class="row">
             
 <div id="form">
@@ -347,25 +347,10 @@
                   <div class="main-content">
 
                 <div class="row">
-    <div class="col-md-12 col-sm-12 clearfix" style="text-align:center;">
-        <h2 style="font-weight:200; margin:0px;float: left;" class="page-header">Historiku i Pacientit</h2>
+    <div class="col-md-12 col-sm-12 clearfix" style="text-align:left;">
+        <h2 style="font-weight:200; margin:0px; ">Historiku i Pacientit</h2>
     </div>
 
-    <!-- Raw Links -->
-    <div class="col-md-12 col-sm-12 clearfix ">
-
-        <ul class="list-inline links-list pull-left">
-            <!-- Language Selector -->      
-           
-            
-            <!-- Message Notifications -->
-                     
-                
-                  
-
-                    
-                    </ul>
-    </div>
 
 </div>
 
@@ -461,9 +446,136 @@
 </ul>
                 
             </div>
+
+
+
+
+                <div class="row">
+    <div class="col-md-12 col-sm-12 clearfix" style="text-align:left;">
+        <h2 style="font-weight:200; margin:0px; ">Ploteso te dhenat e kontrollit sotem</h2>
+    </div>
+
+
+</div>
+
+<hr style="margin-top:0px;" />
+<br>
             
         </div>
+        
     </div>
+
+<!-- qetu hyn forma-->
+<div id="part3">
+
+    <div class="container">
+
+        <div class="row">
+            
+<div id="form">
+     <div class="inner-1">
+
+
+     
+
+    <form method="POST" class="form-horizontal well" action="administrata.php" name="form1" >
+           
+
+        
+
+            <div class="form-group">
+                <label for="shendetesor_mjeku" class="control-label col-xs-2 ">Institucioni Shendetesor: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="shendetesor_mjeku" name="instutucion" placeholder="Instutucioni shendetsor*" required/>
+                    </div>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="konsulenti" class="control-label col-xs-2 ">Konsulenti: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="konsulenti" name="instutucion" placeholder="Konsulenti*" required/>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reparti" class="control-label col-xs-2 ">Reparti: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="reparti" name="instutucion" placeholder="Reparti*" required/>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <label for="udhezim_shendetesor" class="control-label col-xs-2 ">Udhezimi shendetsor: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="udhezim_shendetesor" name="udhezim_shendetsor" placeholder="Udhezimi shendetsor*" required/>
+                    </div>
+            </div>
+
+           
+           <div class="form-group">
+                <label for="anemeza" class="control-label col-xs-2 ">Anemeza: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="anemeza" name="anemeza" placeholder="anemeza *" required/>
+                    </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="ekzaminimet" class="control-label col-xs-2 ">Ekzaminimet: </label>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" id="ekzaminimet" name="ekzaminimet" placeholder="Ekzaminimet*" required/>
+                    </div>
+            
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_ekzaminimet" name="kodi_ekzaminimet" placeholder="kodi i Ekzaminimeve*" required/>
+                    </div>
+            
+            </div>
+            <div class="form-group">
+                <label for="trajtimi" class="control-label col-xs-2 ">Trajtimi i tanishem: </label>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" id="trajtimi" name="trajtimi" placeholder="Trajtimi i tanishem*" required/>
+                    </div>
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_barnava" name="kodi_barnave" placeholder="kodi i barnave *" required/>
+                    </div>
+            </div>
+             <div class="form-group">
+                <label for="trajtimi" class="control-label col-xs-2 ">Diagnoza e punes: </label>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" id="trajtimi" name="trajtimi" placeholder="Trajtimi i tanishem*" required/>
+                    </div>
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_semundjes" name="kodi_semundjes" placeholder="kodi i semundjes *" required/>
+                    </div>
+            </div>
+            <div class="form-group">
+                    <label class="control-label  col-xs-2 " for="datam" >Data: </label>
+                        <div class="col-xs-6">
+                        <input type="date" class="form-control" id="datam" placeholder="Data *">
+                    </div>
+                 </div>         
+                <div class="row" style="margin:40px">       
+                    <div class="col-xs-6 pull-right ">
+                        <a href="tabela_pacientit.html" target="_blank" class="btn btn-primary btn-lg" style="padding: 20px" >Ruaj të dhënat</a>
+                    </div>
+                </div>
+            
+    
+
+
+
+</form>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
 </div>
 
 
@@ -579,89 +691,7 @@
     </div>
 
 
-   <!-- (Normal Modal) for Edit-->
-    <div class="modal fade" id="edit">
-        <div class="modal-dialog">
-            <div class="modal-content" style="margin-top:100px;">
-                
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" style="text-align:center;">Are you sure to delete this information ?</h4>
-                </div>
-                
-                
-                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
-                  <span id="preloader-delete"></span>
-                    </br>
-                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Delete</button>
-                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Cancel</button>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-<!--qekjo o pjesa qe e kam shtu per me bo diagnoza-->
-  
-    <div class="modal fade" id="diagnoza">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h3 class="modal-title" style="text-align:center;">Diagnoza per pacientin- Pershkrimi</h3>
-                </div>
-                
-                   </br>
-                    <div class="modal-body">
-                  
-                    <div class="row ">
-                        <div class=" col-xs-4 pull-left">Diagnoza e pacientit </div>
-                        <div class=" col-xs-4 pull-right">Te dhenat se nga cka eshte i semure pacienti</div>
 
-                   </div>
-                    <hr />
-                    <div style="border: 0.5px solid #DDDDDD ; border-radius:5px padding-bottom: 200px ">
-
-                     <strong class="pull-left col-xs-2">Gjaku: </strong>
-                      
-                     <input type="text" class="historiku" value="I ngjizur"/>
-
-                     <br />
-                      
-                     
-                     <strong class="pull-left  col-xs-2" >Semundja: </strong>
-                    
-
-                     <input type="text" class="historiku" value="Migrena"/>
-
-                     <br />
-                      
-
-                   
-                     <strong class="pull-left col-xs-2">Dhimbja: </strong>
-                      
-
-                     <input type="text" class="historiku1" value="Dhimbje koke"/>
-
-                      <br />
-                      
-                   </div>
-                  
-
-               <button  style="margin-top: 25px" class="btn btn-info col-xs-2 hidden-print" onclick="myFunction1()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printo</button>
-
-               <p class="signature pull-right" style="margin-top: 100px" ><strong >Nenshkrimi: </strong></p>
-
-                     </div>
-                     <div class="modal-footer" style="margin-top: 150px">
-                     <ul><p>Spitali Regjional "Isa Grezda"</p>
-                     <p>  Rruga: Deshmoret e Lirise-Gjakove  </p>
-                     <p>  Tel: 039 256 256</p></ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-<!--ketu perfundon pjesa e diagnozes-->
 
     <!-- (Normal Modal) for shiko receptin-->
     <div class="modal fade" id="recepti">
@@ -740,27 +770,110 @@
     </div>
 
 
-    <!-- (Normal Modal) for shiko diagnozen-->
+      <!-- modali per edit butonin -->
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
+      </div>
+          <div class="modal-body">
+          <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" placeholder="data" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+        <div class="form-group">
+        
+        <input class="form-control " type="text" placeholder="Irshad">
+        </div>
+        <div class="form-group">
+        <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
+    
+        
+        </div>
+      </div>
+          <div class="modal-footer ">
+        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
+      </div>
+        </div>
+    <!-- /.modal-content --> 
+  </div>
+      <!-- /.modal-dialog for edit  --> 
+    </div>
+
+    <!--qekjo o pjesa qe e kam shtu per me bo diagnoza-->
+  
     <div class="modal fade" id="diagnoza">
         <div class="modal-dialog">
-            <div class="modal-content" style="margin-top:100px;">
-                
+            <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" style="text-align:center;">A jeni e sigurt që dëshironi të fshini informacionin?</h4>
+                    <h3 class="modal-title" style="text-align:center;">Diagnoza per pacientin- Pershkrimi</h3>
                 </div>
                 
-                
-                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
-                  <span id="preloader-delete"></span>
-                    </br>
-                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Fshij</button>
-                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Anulo</button>
+                   </br>
+                    <div class="modal-body">
+                  
+                    <div class="row ">
+                        <div class=" col-xs-4 pull-left">Diagnoza e pacientit </div>
+                        <div class=" col-xs-4 pull-right">Te dhenat se nga cka eshte i semure pacienti</div>
+
+                   </div>
+                    <hr />
+                    <div style="border: 0.5px solid #DDDDDD ; border-radius:5px padding-bottom: 200px ">
+
+                     <strong class="pull-left col-xs-2">Gjaku: </strong>
+                      
+                     <input type="text" class="historiku" value="I ngjizur"/>
+
+                     <br />
+                      
+                     
+                     <strong class="pull-left  col-xs-2" >Semundja: </strong>
                     
+
+                     <input type="text" class="historiku" value="Migrena"/>
+
+                     <br />
+                      
+
+                   
+                     <strong class="pull-left col-xs-2">Dhimbja: </strong>
+                      
+
+                     <input type="text" class="historiku1" value="Dhimbje koke"/>
+
+                      <br />
+                      
+                   </div>
+                  
+
+               <button  style="margin-top: 25px" class="btn btn-info col-xs-2 hidden-print" onclick="myFunction1()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printo</button>
+
+               <p class="signature pull-right" style="margin-top: 100px" ><strong >Nenshkrimi: </strong></p>
+
+                     </div>
+                     <div class="modal-footer" style="margin-top: 150px">
+                    <button type="submit" class="btn btn-default pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
+<!--ketu perfundon pjesa e diagnozes-->
 
 
 
@@ -829,113 +942,7 @@
 <link rel="stylesheet" href="assets/js/selectboxit/jquery.selectBoxIt.css">
 
 
-<div id="page-wrapper">
-                 <div class="container-fluid">
-
-                     <div class="row">
-                         <div class="col-lg-12">
-                            <h1 class="page-header">Plotëso të dhënat e kontrollit të sotëm</h1>
-                            <div id="part3">
-    <div class="container" style="width: 1000px;">
-        <div class="row">
-            
-<div id="form">
-     <div class="inner-1">
- 
-    
-    <form method="POST" class="form-horizontal well" action="administrata.php" name="form1" >
-
-        
-
-            <div class="form-group">
-                <label for="shendetesor_mjeku" class="control-label col-xs-2 ">Institucioni Shendetesor: </label>
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control" id="shendetesor_mjeku" name="instutucion" placeholder="Instutucioni shendetsor*" required/>
-                    </div>
-            </div>
-
-           
-            <div class="form-group">
-                <label for="konsulenti" class="control-label col-xs-2 ">Konsulenti: </label>
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control" id="konsulenti" name="instutucion" placeholder="Konsulenti*" required/>
-                    </div>
-            </div>
-
-            <div class="form-group">
-                <label for="reparti" class="control-label col-xs-2 ">Reparti: </label>
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control" id="reparti" name="instutucion" placeholder="Reparti*" required/>
-                    </div>
-            </div>
-
-            <div class="form-group">
-                <label for="udhezim_shendetesor" class="control-label col-xs-2 ">Udhezimi shendetsor: </label>
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control" id="udhezim_shendetesor" name="udhezim_shendetsor" placeholder="Udhezimi shendetsor*" required/>
-                    </div>
-            </div>
-
-           
-           <div class="form-group">
-                <label for="anemeza" class="control-label col-xs-2 ">Anemeza: </label>
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control" id="anemeza" name="anemeza" placeholder="anemeza *" required/>
-                    </div>
-            </div>
-            
-            <div class="form-group">
-                <label for="ekzaminimet" class="control-label col-xs-2 ">Ekzaminimet: </label>
-                    <div class="col-xs-4">
-                        <input type="text" class="form-control" id="ekzaminimet" name="ekzaminimet" placeholder="Ekzaminimet*" required/>
-                    </div>
-            
-                    <div class="col-xs-2">
-                        <input type="text" class="form-control" id="kodi_ekzaminimet" name="kodi_ekzaminimet" placeholder="kodi i Ekzaminimeve*" required/>
-                    </div>
-            
-            </div>
-            <div class="form-group">
-                <label for="trajtimi" class="control-label col-xs-2 ">Trajtimi i tanishem: </label>
-                    <div class="col-xs-4">
-                        <input type="text" class="form-control" id="trajtimi" name="trajtimi" placeholder="Trajtimi i tanishem*" required/>
-                    </div>
-                    <div class="col-xs-2">
-                        <input type="text" class="form-control" id="kodi_barnava" name="kodi_barnave" placeholder="kodi i barnave *" required/>
-                    </div>
-            </div>
-             <div class="form-group">
-                <label for="trajtimi" class="control-label col-xs-2 ">Diagnoza e punes: </label>
-                    <div class="col-xs-4">
-                        <input type="text" class="form-control" id="trajtimi" name="trajtimi" placeholder="Trajtimi i tanishem*" required/>
-                    </div>
-                    <div class="col-xs-2">
-                        <input type="text" class="form-control" id="kodi_semundjes" name="kodi_semundjes" placeholder="kodi i semundjes *" required/>
-                    </div>
-            </div>
-            <div class="form-group">
-                    <label class="control-label  col-xs-2 " for="datam" >Data: </label>
-                        <div class="col-xs-6">
-                        <input type="date" class="form-control" id="datam" placeholder="Data *">
-                    </div>
-                 </div>         
-                <div class="row" style="margin:40px">       
-                    <div class="col-xs-6 pull-right ">
-                        <a href="tabela_pacientit.html" target="_blank" class="btn btn-primary btn-lg" style="padding: 20px" >Ruaj të dhënat</a>
-                    </div>
-                </div>
-            
-    
 
 </div>
-</div>
-</div>
-        </div>
-    </div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
+</body>
 </html>

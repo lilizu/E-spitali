@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Startmin - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/startmin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+    function checkDelete()
+    {
+        var chk=confirm("Are You Sure To Delete This !");
+        if(chk)
+        {
+          return true;  
+        }
+        else{
+            return false;
+        }
+    }
+</script>
+
+
+
+</head>
+<body>
+
+
+
+<div class="container">
+	<div class="row">
+		
+                  <div class="main-content">
+
+                <div class="row">
+    <div class="col-md-12 col-sm-12 clearfix" style="text-align:center;">
+        <h2 style="font-weight:200; margin:0px;">Historiku i Pacientit</h2>
+    </div>
+
+    <!-- Raw Links -->
+    <div class="col-md-12 col-sm-12 clearfix ">
+
+        <ul class="list-inline links-list pull-left">
+            <!-- Language Selector -->      
+           
+            
+            <!-- Message Notifications -->
+                     
+                
+                  
+
+                    
+                    </ul>
+
+
+        <ul class="list-inline links-list pull-right">
+
+            <li>
+                <a href="http://creativeitem.com/demo/bayanno/index.php?login/logout">
+                    Log Out <i class="entypo-logout right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<hr style="margin-top:0px;" />
+                <h3 style="margin:20px 0px; color:#818da1; font-weight:200;">
+                    <i class="fa fa-stethoscope"></i> 
+                    Receta               </h3>
+
+                <button data-target="#addpre" data-toggle="modal" data-title="shto nje recept te ri" onclick="showAjaxModal('http://creativeitem.com/demo/bayanno/index.php?modal/popup/add_prescription/');" 
+    class="btn btn-primary pull-right">
+        Add Prescription</button>
+        <button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
+  <div style="clear:both;"></div>
+<br>
+
+
+        <div class="table-responsive">
+
+                
+              <table id="box" class="table table-bordered table-striped datatable" >
+                   
+                   <thead>
+                   
+                   
+                   <th>Data</th>
+                    <th>Pacienti</th>
+                     <th>Doktorri</th>
+                    
+                     <th>Shiko te dhenat</th>
+                      
+                   </thead>
+    <tbody>
+    
+    <tr>
+    
+     <td>25 Feb, 2015 - 09:05</td>
+    <td>Xander Mcfarland</td>
+    <td>Jana Stafford</td>
+    
+    <td>
+      <a  href="#edit" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-pencil"></i> Edit</a>
+
+      <a href="#recepti" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Shiko receptin</a>
+      <a href="#diagnoza" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Diagnoza e pacientit</a>
+
+      <a href="#modal_delete" data-toggle="modal" data-title="Delete" class="btn btn-danger btn-sm btn-icon icon-left" onclick="return checkDelete();"><i class="fa fa-trash"></i> Delete</a>
+      <!--
+      <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-default btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil"></i> Edit</button> -->
+    
+    
+      <!--
+    <p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash"></i> Delete</button></p>
+  -->
+  
+    
+     <!--
+    <p data-placement="top" data-toggle="tooltip" title="view_report"><button class="btn btn-info btn-xs" data-title="view-report" data-toggle="modal" data-target="#view_report" ><i class="fa fa-eye"></i> Shikoni receptin</button></p>
+    
+     
+
+    <p data-placement="top" data-toggle="tooltip" title="diagnoza"><button class="btn btn-info btn-xs" data-title="diagnoza" data-toggle="modal" data-target="#diagnoza" ><i class="fa fa-eye"></i> Diagnostifikimi i pacientit</button></p>
+#
+  -->
+  </td>
+    </tr>
+
+    
+   
+    
+   
+    
+   
+    
+    </tbody>
+        
+</table>
+
+<div class="clearfix"></div>
+<ul class="pagination pull-right">
+  <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+
+  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+</ul>
+                
+            </div>
+            
+        </div>
+	</div>
+</div>
+
+
+
+ <!-- (Normal Modal) for add a prescription-->
+    <div class="modal fade" id="addpre">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin-top:100px;">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" style="text-align:left;">Forma e Mjekut</h3>
+                </div>
+                
+                
+                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+                  <span id="preloader-delete"></span>
+                    </br>
+                    <form method="POST" class="form-horizontal well" action="administrata.php" name="form1" >
+         
+        
+
+            <div class="form-group">
+                <label for="shendetesor_mjeku" class="control-label col-xs-2 ">Institucioni Shendetesor: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="shendetesor_mjeku" name="instutucion" placeholder="Instutucioni shendetsor*" required/>
+                    </div>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="konsulenti" class="control-label col-xs-2 ">Konsulenti: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="konsulenti" name="instutucion" placeholder="Konsulenti*" required/>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reparti" class="control-label col-xs-2 ">Reparti: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="reparti" name="instutucion" placeholder="Reparti*" required/>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <label for="udhezim_shendetesor" class="control-label col-xs-2 ">Udhezimi shendetsor: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="udhezim_shendetesor" name="udhezim_shendetsor" placeholder="Udhezimi shendetsor*" required/>
+                    </div>
+            </div>
+
+           
+           <div class="form-group">
+                <label for="anemeza" class="control-label col-xs-2 ">Anemeza: </label>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="anemeza" name="anemeza" placeholder="anemeza *" required/>
+                    </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="ekzaminimet" class="control-label col-xs-2 ">Ekzaminimet: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="ekzaminimet" name="ekzaminimet" placeholder="Ekzaminimet*" required/>
+                    </div>
+            
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_ekzaminimet" name="kodi_ekzaminimet" placeholder="kodi i Ekzaminimeve*" required/>
+                    </div>
+            
+            </div>
+            <div class="form-group">
+                <label for="trajtimi" class="control-label col-xs-2 ">Trajtimi i tanishem: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="trajtimi" name="trajtimi" placeholder="Trajtimi i tanishem*" required/>
+                    </div>
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_barnava" name="kodi_barnave" placeholder="kodi i barnave *" required/>
+                    </div>
+            </div>
+             <div class="form-group">
+                <label for="trajtimi" class="control-label col-xs-2 ">Diagnoza e punes: </label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="trajtimi" name="trajtimi" placeholder="Trajtimi i tanishem*" required/>
+                    </div>
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="kodi_semundjes" name="kodi_semundjes" placeholder="kodi i semundjes *" required/>
+                    </div>
+            </div>
+            <div class="form-group">
+                    <label class="control-label  col-xs-2 " for="datam" >Data: </label>
+                        <div class="col-xs-8">
+                        <input type="date" class="form-control" id="datam" placeholder="Data *">
+                    </div>
+                 </div>         
+                <div class="row" style="margin:40px">       
+                    <div class="col-xs-4 col-sm-4 pull-right ">
+                        <a href="new_nc.html" target="_blank" class="btn btn-primary" style="padding: 5px" >Regjistro!</a>
+                    </div>
+                </div>
+            
+    
+
+</div>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- (Normal Modal) for Edit-->
+    <div class="modal fade" id="edit">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin-top:100px;">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" style="text-align:center;">Are you sure to delete this information ?</h4>
+                </div>
+                
+                
+                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+                  <span id="preloader-delete"></span>
+                    </br>
+                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Delete</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Cancel</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- (Normal Modal) for shiko receptin-->
+    <div class="modal fade" id="recepti">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+               
+                    
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" style="text-align:center;">Recepti per pacientin- Pershkrimi</h3>
+                </div>
+                
+                
+                
+                  
+                    </br>
+                    <div class="modal-body">
+                    <!-- qetu vin te dhenat e pacientit dhe te doktorrit, emri i pacientit, mosha, gjinia, kurse te dhenat e doktorit, emri dhe data e leshimit te receptit -->
+                    <div class="row ">
+                        <div class=" col-xs-4 pull-left">te dhenat e pacientit vin ketu</div>
+                        <div class=" col-xs-4 pull-right">te dhenat e doktorrit kettu bashk me ID</div>
+
+                    </div>
+                    <hr />
+                    <div style="border: 0.5px solid #DDDDDD; border-radius:5px padding-bottom: 200px ">
+
+                      <strong class="pull-left col-xs-2">Historiku: </strong>
+                      
+                      <input type="text" class="historiku" value="e ftohur per tri dite me rradhe"/>
+
+                      <br />
+                      
+                      
+                      <strong class="pull-left  col-xs-2" >Medikamentet: </strong>
+                    
+
+                      <input type="text" class="historiku" value="alatrol 100 mg, dz her ndite pas buke"/>
+
+                      <br />
+                      
+
+                    
+                      <strong class="pull-left col-xs-2">Verejtje: </strong>
+                       
+
+                      <input type="text" class="historiku1" value="mos pi uj apo ha diqka kur je e ftoht"/>
+
+                       <br />
+                      
+                    </div>
+                  
+
+                <button  style="margin-top: 25px" class="btn btn-info col-xs-2 hidden-print" onclick="myFunction1()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printo</button>
+
+                <p class="signature pull-right" style="margin-top: 100px" ><strong >Nenshkrimi: </strong></p>
+
+                      </div>
+                     <div class="modal-footer" style="margin-top: 150px">
+                    <button type="submit" class="btn btn-default pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- (Normal Modal) for shiko diagnozen-->
+    <div class="modal fade" id="diagnoza">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin-top:100px;">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" style="text-align:center;">Are you sure to delete this information ?</h4>
+                </div>
+                
+                
+                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+                  <span id="preloader-delete"></span>
+                    </br>
+                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Delete</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Cancel</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+  
+
+
+
+     <script type="text/javascript">
+  function confirm_modal(delete_url , post_refresh_url)
+  {
+    $('#preloader-delete').html('');
+    jQuery('#modal_delete').modal('show', {backdrop: 'static'});
+    document.getElementById('delete_link').setAttribute("onClick" , "delete_data('" + delete_url + "' , '" + post_refresh_url + "')" );
+    document.getElementById('delete_link').focus();
+  }
+  </script>
+    
+    <!-- (Normal Modal)-->
+    <div class="modal fade" id="modal_delete">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin-top:100px;">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" style="text-align:center;">Are you sure to delete this information ?</h4>
+                </div>
+                
+                
+                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+                  <span id="preloader-delete"></span>
+                    </br>
+                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Delete</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Cancel</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    function myFunction() {
+    window.print();
+}
+</script>
+<script type="text/javascript">
+    function myFunction1() {
+    window.print();
+}
+</script>
+
+
+    <!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/startmin.js"></script>
+
+<link rel="stylesheet" href="assets/js/daterangepicker/daterangepicker-bs3.css">
+
+<link rel="stylesheet" href="assets/js/selectboxit/jquery.selectBoxIt.css">
+
+
+</body>
+</html>

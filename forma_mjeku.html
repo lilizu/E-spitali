@@ -2,14 +2,13 @@
 <html>
    <head>
        <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Administrata </title>
+      <title>E-Spitali/Doktori</title>
           <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/img/logo1.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Startmin - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,11 +34,292 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+
+            /* start drop down styling*/
+                .dropbtn {
+            background-color: #0066ff;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #B0E0E6;
+        }
+
+        .dropdown {
+            float: right;
+            position: relative;
+            display: inline-block;
+            
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            right: 15px;
+            top: 87px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {background-color: #f1f1f1}
+
+        .show {display:block;}
+        /* end drop down styling*/
+
+
+
+
+
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        body {
+            background: #f0f0f0;
+            font: 14px/20px Arial, San-Serif;
+            color: #555;
+            text-decoration: none;
+            margin: 0;
+        }
+        
+        a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color:#FFF;
+            text-decoration: underline;
+        }
+        header {
+            background: #0074D9;
+            width: 100%;
+            height: 86px;
+            position:absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            opacity: 0.90;
+        }
+        #logo{
+            float: right;
+            width: 1px;
+            height:  1px;
+            border-radius: 25px;
+            background-image: url("assets/img/logo1.png");
+        }
+        #logo1{
+            margin: 20px;
+            margin-right: 5px;
+            float: right;
+            width: 80px;
+            height:  60px;
+            border-radius: 25px;
+            background-image: url("logo1.png");
+        }
+        nav {
+            float: right;
+            padding: 35px 20px 20px 0;
+        }
+        #menu-icon{
+            margin-top: 30px;
+             margin-bottom: 0px;
+             margin-right: 40px;
+             margin-left: 0px;
+             border-radius: 25px;
+            display: hidden;
+            width: 55px;
+            height: 40px;
+            background-image: url("menu-icon.png");
+        }
+        a:hover#menu-icon {
+            border-radius: 4px 4px 0 0;
+        }
+        li {
+            color: white;
+            text-orientation: none;
+            font-size: 20px;
+        }
+        ul {
+            list-style: none;
+        }
+        nav ul li {
+            display: inline-block;
+            float: left;
+            padding: 15px;
+        }
+        .current {
+            color: #FFF;
+            text-decoration: none;
+        }
+        </style>
+
+    
 </head>
-   <body>
+<body>
+    <header>
+        <!--dropdown menu-->
+        <div class="dropdown">
+            <img id="menu-icon" src="assets/img/menu.png" onclick="myFunction()" class="dropbtn"/>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Profili</a>
+                    <a href="#contact">Dilni</a>
+                </div>
+        </div>
+
+            <img id="logo1" src="assets/img/staff2.png"/>
+
+        <!--start javascript-dropdown menu-->
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+            <!-- end of javascript-->
+
+        <img src="assets/img/logo1.png" style="float: left; margin: 5px; width: 70px; margin-left: 70px;margin-top:10px;"/>
+        <nav>
+            <ul>
+                <li >ID: 124386 </li>
+                <li >Ardian Krasniqi</li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+      
+        <!-- Sidebar= search -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="254867">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+            <!-- Informatat e pacientit-historiku -->
+            
+             <div id="page-wrapper">
+                 <div class="container-fluid">
+
+                     <div class="row">
+                         <div class="col-lg-12">
+                            <h1 class="page-header">Informatat e pacientit</h1>
+                            <div id="part3">
+    <div class="container">
+        <div class="row">
+            
+<div id="form">
+     <div class="inner-1">
+ 
+    
+    <form method="POST" class="form-horizontal well" action="administrata.php" name="form1" >
+            
+             <div class="form-group">
+                <label for="ref-num" class="control-label col-xs-2 "> Numri ID: </label>
+                    <p for="ref-num" class="control-label col-xs-2 "> 254867 </p>
+            </div>
+
+            <div class="form-group">
+                <label for="emri_pacientit" class="control-label col-xs-2 ">Emri Pacientit: </label>
+                    <p for="ref-num" class="control-label col-xs-2 "> Serafina </p>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="emri_prindit" class="control-label col-xs-2 ">Emri Prindit: </label>
+                    <p for="ref-num" class="control-label col-xs-2 "> Albert </p>
+            </div>
+            
+
+              <div class="form-group">
+                <label for="mbiemri_pacientit" class="control-label col-xs-2 "> Mbiemri: </label>
+                    <p for="ref-num" class="control-label col-xs-2 "> Rama </p>
+            </div>
+            
+                <div class="form-group">
+                    <label class="control-label  col-xs-2 " for="viti_lindjes" >Viti i Lindjes: </label>
+                        <p for="ref-num" class="control-label col-xs-2 "> 01/11/1993 </p>
+                 </div>
+        
+
+           
+             <div class="form-group">
+                <label for="adresa_pacientit" class="control-label col-xs-2 ">Adresa Pacientit: </label>
+                    <p for="ref-num" class="control-label col-xs-2 "> Gjakove </p>
+            </div>
+
+             <div class="form-group">
+                <label for="profesioni_pacientit" class="control-label col-xs-2 ">Profesioni i pacientit: </label>
+                    <p for="ref-num" class="control-label col-xs-2 "> Kontabiliste </p>
+            </div>
+
+              <div class="form-group">
+                <label for="alergjit_pacientit" class="control-label col-xs-2 ">Alergjite: </label>
+                    <p for="ref-num" class="control-label col-xs-2 "> Penecilin </p>
+            </div>
+           
 
 
+            <div class="form-group">
+                <label for="gjaku_pacientit" class="control-label col-xs-2 ">Grupi i gjakut: </label>
+                    <p for="ref-num" class="control-label col-xs-2 "> A- </p>
+            </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
 
+                     </div>
+                 </div>
 <div id="part3">
     <div class="container">
         <div class="row">
@@ -49,7 +329,7 @@
  
 
     <form method="POST" class="form-horizontal well" action="administrata.php" name="form1" >
-            <h2 class="text-primary">1. Forma e Mjekut</h2>
+            <h2 class="text-primary">Plotëso të dhënat e kontrollit të sotëm</h2>
              <hr />
 
         
@@ -128,7 +408,7 @@
                  </div>         
                 <div class="row" style="margin:40px">       
                     <div class="col-xs-6 pull-right ">
-                        <a href="new_nc.html" target="_blank" class="btn btn-primary btn-lg" style="padding: 20px" >Regjistro!</a>
+                        <a href="new_nc.html" target="_blank" class="btn btn-primary btn-lg" style="padding: 20px" >Ruaj të dhënat</a>
                     </div>
                 </div>
             

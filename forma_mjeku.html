@@ -27,7 +27,25 @@
 
     <!-- Custom Fonts -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+     <!-- js per historikun e pacientit-->
+     <script>
+    function checkDelete()
+    {
+        var chk=confirm("A jeni e sigurt qe deshironi ta fshijni kete?!");
+        if(chk)
+        {
+          return true;  
+        }
+        else{
+            return false;
+        }
+    }
+</script>
+<!-- end of js per historikun e pacientit-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -311,21 +329,25 @@
                 <label for="gjaku_pacientit" class="control-label col-xs-2 ">Grupi i gjakut: </label>
                     <p for="ref-num" class="control-label col-xs-2 "> A- </p>
             </div>
+
+
 </form>
 </div>
 </div>
 </div>
 </div>
 </div>
-
-                     </div>
+             </div>
                  </div>
+
 <div id="part3">
     <div class="container">
         <div class="row">
             
 <div id="form">
      <div class="inner-1">
+
+
  
 
     <form method="POST" class="form-horizontal well" action="administrata.php" name="form1" >
@@ -408,7 +430,7 @@
                  </div>         
                 <div class="row" style="margin:40px">       
                     <div class="col-xs-6 pull-right ">
-                        <a href="new_nc.html" target="_blank" class="btn btn-primary btn-lg" style="padding: 20px" >Ruaj të dhënat</a>
+                        <a href="tabela_pacientit.html" target="_blank" class="btn btn-primary btn-lg" style="padding: 20px" >Ruaj të dhënat</a>
                     </div>
                 </div>
             

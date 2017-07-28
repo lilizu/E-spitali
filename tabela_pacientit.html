@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>E-Spitali-Historiku i pacientit</title>
+    <title>Startmin - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,6 +36,11 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+          <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"> -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css"> 
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker-standalone.css"> 
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
 
     <script>
     function checkDelete()
@@ -158,7 +163,6 @@
       <a href="#diagnoza" data-toggle="modal" data-title="Edit" onclick="" class="btn btn-default btn-sm btn-icon icon-left"><i class="fa fa-eye"></i> Diagnoza e pacientit</a>
 
       <a href="#modal_delete" data-toggle="modal" data-title="Delete" class="btn btn-danger btn-sm btn-icon icon-left" onclick="return checkDelete();"><i class="fa fa-trash"></i> Fshije</a>
-
       <!--
       <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-default btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil"></i> Edit</button> -->
     
@@ -295,28 +299,65 @@
         </div>
     </div>
 
-
-   <!-- (Normal Modal) for Edit-->
-    <div class="modal fade" id="edit">
+    <!--qekjo o pjesa qe e kam shtu per me bo diagnoza-->
+  
+    <div class="modal fade" id="diagnoza">
         <div class="modal-dialog">
-            <div class="modal-content" style="margin-top:100px;">
-                
+            <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" style="text-align:center;">Are you sure to delete this information ?</h4>
+                    <h3 class="modal-title" style="text-align:center;">Diagnoza per pacientin- Pershkrimi</h3>
                 </div>
                 
-                
-                <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
-                  <span id="preloader-delete"></span>
-                    </br>
-                    <button type="button" class="btn btn-danger" id="delete_link" onClick="">Delete</button>
-                    <button type="button" class="btn btn-info" data-dismiss="modal" id="delete_cancel_link">Cancel</button>
+                   </br>
+                    <div class="modal-body">
+                  
+                    <div class="row ">
+                        <div class=" col-xs-4 pull-left">Diagnoza e pacientit </div>
+                        <div class=" col-xs-4 pull-right">Te dhenat se nga cka eshte i semure pacienti</div>
+
+                   </div>
+                    <hr />
+                    <div style="border: 0.5px solid #DDDDDD ; border-radius:5px padding-bottom: 200px ">
+
+                     <strong class="pull-left col-xs-2">Gjaku: </strong>
+                      
+                     <input type="text" class="historiku" value="I ngjizur"/>
+
+                     <br />
+                      
+                     
+                     <strong class="pull-left  col-xs-2" >Semundja: </strong>
                     
+
+                     <input type="text" class="historiku" value="Migrena"/>
+
+                     <br />
+                      
+
+                   
+                     <strong class="pull-left col-xs-2">Dhimbja: </strong>
+                      
+
+                     <input type="text" class="historiku1" value="Dhimbje koke"/>
+
+                      <br />
+                      
+                   </div>
+                  
+
+               <button  style="margin-top: 25px" class="btn btn-info col-xs-2 hidden-print" onclick="myFunction1()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printo</button>
+
+               <p class="signature pull-right" style="margin-top: 100px" ><strong >Nenshkrimi: </strong></p>
+
+                     </div>
+                     <div class="modal-footer" style="margin-top: 150px">
+                    <button type="submit" class="btn btn-default pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
+<!--ketu perfundon pjesa e diagnozes-->
 
 
     <!-- (Normal Modal) for shiko receptin-->
@@ -386,13 +427,55 @@
 
                       </div>
                      <div class="modal-footer" style="margin-top: 150px">
-                     <ul><p>Spitali Regjional "Isa Grezda"</p>
-                     <p>  Rruga: Deshmoret e Lirise-Gjakove  </p>
-                     <p>  Tel: 039 256 256</p></ul>
-
+                    <button type="submit" class="btn btn-default pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove">Anulo</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- modali per edit butonin -->
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
+      </div>
+          <div class="modal-body">
+          <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" placeholder="data" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+        <div class="form-group">
+        
+        <input class="form-control " type="text" placeholder="Irshad">
+        </div>
+        <div class="form-group">
+        <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
+    
+        
+        </div>
+      </div>
+          <div class="modal-footer ">
+        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
+      </div>
+        </div>
+    <!-- /.modal-content --> 
+  </div>
+      <!-- /.modal-dialog for edit  --> 
     </div>
 
 
